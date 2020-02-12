@@ -15,15 +15,15 @@ We expect you to know how to setup Lumen via Composer. Documentation for the fra
 
 First of all thank you for participating in our backend code challenge.
 
-#Headsup:
+# Headsup:
 
 There is command you find called `ClientMatchesDaemonCommand`, which will run a daemon to fetch betting event data from one of our existing providers.
 
-#Goal:
+# Goal:
 
 You are expected to fill out the client_matches  and client_matches_some_client tables with the fetched data.
 
-#Task breakdown:
+# Task breakdown:
 
 More precisely you are supposed to:
 
