@@ -21,14 +21,15 @@ There is command you find called `ClientMatchesDaemonCommand`, which will run a 
 
 ### Goal:
 
-You are expected to fill out the client_matches  and client_matches_some_client tables with the fetched data.
+You are expected to fill out the client_matches  and client_matches_your_fake tables with the fetched data.
 
 ### Task breakdown:
 
 More precisely you are supposed to:
 
-1. Create a seeder of random matches for tables 'matches', 'rosters' and 'match_opponents'
-2. Create another "custom" fetcher which will use seeded matches from the database snapshot provided for filling out `client_matches` and `client_matches_your_fake` tables, with creating randomized odds analog to the data you can find in "SomeClient"
+1. Create a seeder of random data for tables 'matches', 'rosters' and 'match_opponents'
+2. Create entity ClientMatchesYourFake and make ClientMatchesYourFake as JOINED inherence type (https://www.doctrine-project.org/projects/doctrine-orm/en/2.7/reference/inheritance-mapping.html) 
+3. Create another "custom" fetcher which will use seeded matches from the database to fill out `client_matches` and `client_matches_your_fake` tables, with creating randomized odds analog to the data you can find in "SomeClient" Client Matches
 
 ### Stretch-goals related to this challenge are:
 
