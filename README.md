@@ -15,7 +15,7 @@ Documentation for the framework can be found on the [Lumen website](https://lume
 
 Thank you for considering to do test challenge.
 
-There is comman you find called ClientMatchesDaemonCommand, which will run daemon of fetcher betting events from one of our clients.
+There is command you find called ClientMatchesDaemonCommand, which will run daemon of fetcher betting events from one of our clients.
 You expect it to fill out client_matches and client_matches_some_client tables to be filled by this.
 
 We need you to do:
