@@ -25,6 +25,10 @@ $app = new Laravel\Lumen\Application(
 
 // $app->withEloquent();
 
+$app->configure('database');
+$app->configure('clientmatches');
+$app->configure('doctrine');
+
 /*
 |--------------------------------------------------------------------------
 | Register Container Bindings
@@ -76,8 +80,9 @@ $app->singleton(
 |
 */
 
-// $app->register(App\Providers\AppServiceProvider::class);
-// $app->register(App\Providers\AuthServiceProvider::class);
+
+$app->register(LaravelDoctrine\ORM\DoctrineServiceProvider::class);
+$app->register(App\Providers\AppServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 
 /*
