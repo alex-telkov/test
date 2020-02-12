@@ -15,22 +15,22 @@ We expect you to know how to setup Lumen via Composer. Documentation for the fra
 
 First of all thank you for participating in our backend code challenge.
 
-# Headsup:
+### Headsup:
 
 There is command you find called `ClientMatchesDaemonCommand`, which will run a daemon to fetch betting event data from one of our existing providers.
 
-# Goal:
+### Goal:
 
 You are expected to fill out the client_matches  and client_matches_some_client tables with the fetched data.
 
-# Task breakdown:
+### Task breakdown:
 
 More precisely you are supposed to:
 
 1. Create a seeder of random matches for tables 'matches', 'rosters' and 'match_opponents'
 2. Create another "custom" fetcher which will use seeded matches from the database snapshot provided for filling out `client_matches` and `client_matches_your_fake` tables, with creating randomized odds analog to the data you can find in "SomeClient"
 
-#Stretch-goals related to this challenge are:
+### Stretch-goals related to this challenge are:
 
 1. You cover your additionals by tests (use tdd).
 2. Find three (3) hidden bugs
