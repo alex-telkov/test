@@ -7,27 +7,28 @@
 
 Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
 
-## Installation, we expect you to know how to setup Lumen via Composer
+## Installation
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+We expect you to know how to setup Lumen via Composer. Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
 
-## The test
+## The challenge
 
-Thank you for considering to do test challenge.
+First of all thank you for participating in our backend code challenge.
 
-There is command you find called ClientMatchesDaemonCommand, which will run daemon of fetcher betting events from one of our clients.
-You expect it to fill out client_matches and client_matches_some_client tables to be filled by this.
+#Headsup:
+There is command you find called `ClientMatchesDaemonCommand`, which will run a daemon to fetch betting event data from one of our existing providers.
 
-We need you to do:
+#Goal
+You are expected to fill out the client_matches  and client_matches_some_client tables with the fetched data.
 
-1. Create seeder of random matches for tables 'matches', 'rosters', 'match_opponents'.
-2. Create a another "custom" fetcher which will use seeded matches from database and fill out `client_matches` and `client_matches_your_fake` table, with creating / random odds like presented for "SomeClient".
+#Task breakdown
+More precisely you are supposed to:
 
-Bonus work:
-1. You can cover only your additionals by tests (use tdd).
-2. Find 3 hidden bugs/issues.
+1. Create a seeder of random matches for tables 'matches', 'rosters' and 'match_opponents'
+2. Create another "custom" fetcher which will use seeded matches from the database snapshot provided for filling out `client_matches` and `client_matches_your_fake` tables, with creating randomized odds analog to the data you can find in "SomeClient"
+
+#Stretch-goals related to this challenge are:
+1. You cover your additionals by tests (use tdd).
+2. Find three (3) hidden bugs
 3. Do a proposal of possible improvements of test and readme file.
 
-## License
-
-This is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
